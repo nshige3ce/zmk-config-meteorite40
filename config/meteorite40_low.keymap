@@ -83,51 +83,51 @@
     combos {
         compatible = "zmk,combos";
 
-        lang2 {
-            bindings = <&kp LANG2>;
-            key-positions = <12 13>; /* D + F */
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <12 17>; /* D + K */
             layers = <0>;
         };
 
-        lang1 {
-            bindings = <&kp LANG1>;
-            key-positions = <16 17>; /* J + K */
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <7 8>; /* I + O */
             layers = <0>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <20 21>; /* Z + X */
+            key-positions = <6 7 8>; /* U + I + O */
             layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <0 1>; /* Q + W */
+            key-positions = <1 2>; /* W + E */
             layers = <0>;
         };
 
-        line_home {
-            bindings = <&mosk HOME LG(LEFT)>;
-            key-positions = <16 17>; /* J + K (on layer 2) */
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <6 7>; /* U + I */
             layers = <2>;
         };
 
-        line_end {
-            bindings = <&mosk END LG(RIGHT)>;
-            key-positions = <18 19>; /* L + - (on layer 2) */
+        lang1 {
+            bindings = <&kp LANG1>;
+            key-positions = <17 18>; /* K + L */
             layers = <2>;
         };
 
-        doc_home {
-            bindings = <&mosk LC(HOME) LG(UP)>;
-            key-positions = <16 18>; /* J + L (on layer 2) */
+        lang2 {
+            bindings = <&kp LANG2>;
+            key-positions = <11 12>; /* S + D */
             layers = <2>;
         };
 
-        doc_end {
-            bindings = <&mosk LC(END) LG(DOWN)>;
-            key-positions = <17 19>; /* K + - (on layer 2) */
+        CTL_Z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <21 22>; /* X + C */
             layers = <2>;
         };
     };
