@@ -167,7 +167,7 @@
             bindings = <
                 &kp APOS &kp SQT   &trans            &kp LG(SPACE)     &trans                             &trans           &kp LBKT &kp RBKT &kp LBRC        &kp RBRC
                 &trans   &kp trans &kp DEL           &kp BSPC          &kp LC(A)                          &kp LEFT         &kp DOWN &kp UP   &kp RIGHT       &kp trans
-                &trans   &kp trans &kp LG(LS(MINUS)) &kp LG(LS(EQUAL)) &kp LC(E)        &mkp MB4 &mkp MB5 &trans           &trans   &trans   &kp RC(RS(N3))  &kp RC(RS(N4))
+                &trans   &kp trans &kp LG(LS(MINUS)) &kp LG(LS(EQUAL)) &kp LC(E)        &mkp MB4 &mkp MB5 &trans           &trans   &trans   &kp LC(RS(N3))  &kp LC(RS(N4))
                                    &kp LCMD          &kp LCTRL         &mt LSHIFT LANG2 &mkp MB1 &mkp MB2 &mt RSHIFT LANG1 &trans   &kp RALT
             >;
             sensor-bindings =
