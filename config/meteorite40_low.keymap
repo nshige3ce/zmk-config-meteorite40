@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000 // 26.8.30 Addition of description
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500 // 26.8.30 Addition of description
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 200
 #include <dt-bindings/zmk/pointing.h>
 
@@ -178,12 +178,12 @@
         };
 
         layer_3 {
-            display-name = "FUNCTION";
+            display-name = "MOUSE";
             bindings = <
-                &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-                &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none   &none   &none   &none   &none   &none    &none  &none
-                                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &none   &none   &none   &none   &none                   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none
+                &none   &none   &none   &none   &none                   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none
+                &none   &none   &none   &none   &none   &none   &none   &none          &mkp MB1       &mkp MB2     &mkp MB3        &none
+                                &trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans
             >;
             sensor-bindings =
                 <&enc_kp C_VOL_DN C_VOL_UP>,
