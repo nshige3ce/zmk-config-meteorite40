@@ -141,7 +141,7 @@
             bindings = <
                 &mt LCMD   Q &kp W       &kp E        &kp R        &kp T                                 &kp Y        &kp U        &kp I       &kp O  &mt RCMD    P
                 &lt 2      A &kp S       &kp D        &mt LSHIFT F &kp G                                 &kp H        &mt RSHIFT J &kp K       &kp L  &lt 2       SEMI
-                &kp Z        &kp X       &kp C        &lt 1      V &kp B       &lt 2 DEL    &kp BSPC     &kp N        &lt 1      M &kp COMMA   &kp DOT  &mt RALT  SLASH
+                &kp Z        &kp X       &kp C        &lt 1      V &kp B       &lt 2 DEL    &kp BSPC     &kp N        &lt 1      M &kp COMMA   &kp DOT  &lt 4     SLASH
                                    &kp LCMD  &mt LCTRL TAB  &mt LSHIFT SPACE   &mkp MB1     &mkp  MB2    &mt RSHIFT SPACE  &lt 3 ESC  &kp RALT
             >;
             sensor-bindings =
@@ -155,7 +155,7 @@
                 &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                       &kp EQUAL  &kp N7     &kp N8     &kp N9     &kp PLUS
                 &kp CARET  &kp AMPS  &kp LPAR  &kp RPAR  &kp SLASH                       &kp N0     &kp N4     &kp N5     &kp N6     &kp MINUS
                 &kp TILDE  &kp UNDER &kp BSLH  &kp PIPE  &kp DQT    &kp APOS  &kp SQT    &kp DOT    &kp N1     &kp N2     &kp N3     &kp ASTRK
-                                     &kp LCMD  &kp LCTRL &kp LSHIFT &none     &none      &none      &none      &kp RALT
+                                     &kp LCMD  &kp LCTRL &kp LSHIFT &mkp MB3  &mkp MB3   &kp RSHIFT &trans     &kp RALT
             >;
             sensor-bindings =
                 <&enc_kp C_VOL_DN C_VOL_UP>,
@@ -163,12 +163,12 @@
         };
 
         layer_2 {
-            display-name = "NUM / ARROW";
+            display-name = "ARROW";
             bindings = <
-                &kp ASTRK        &kp N7     &kp N8     &kp N9     &kp PLUS                        &none  &none     &none   &kp C_VOL_DN &kp C_VOL_UP
-                &kp SLASH        &kp N4     &kp N5     &kp N6     &kp MINUS                       &none  &kp LEFT  &kp UP  &kp DOWN     &kp RIGHT
-                &kp N0           &kp N1     &kp N2     &kp N3     &kp DOT   &mkp MB4   &mkp MB5   &none  &none     &none   &none        &none
-                                        &trans           &trans     &trans     &trans    &trans        &trans  &trans    &trans
+                &kp APOS  &kp SQT    &trans        &kp LG(SPACE)   &trans                                  &trans            &kp LBKT  &kp RBKT &kp LBRC      &kp RBRC
+                &trans    &kp trans  &kp DEL       &kp BSPC        &kp LC(A)                               &kp LEFT          &kp DOWN  &kp UP   &kp RIGHT     &kp trans
+                &trans    &kp trans  &kp LG(MINUS) &kp LG(PLUS)    &kp LC(E)         &mkp MB4   &mkp MB5   &trans            &trans    &trans   &kp RC(HASH)  &kp RC(DLLR)
+                                     &kp LCMD      &kp LCTRL       &mt LSHIFT LANG2  &mkp MB1   &mkp MB2   &mt RSHIFT LANG1  &trans    &kp RALT
             >;
             sensor-bindings =
                 <&enc_kp C_VOL_DN C_VOL_UP>,
