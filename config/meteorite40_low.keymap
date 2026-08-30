@@ -110,25 +110,25 @@
         space {
             bindings = <&kp SPACE>;
             key-positions = <6 7>; /* U + I */
-            layers = <2>;
+            layers = <0>;
         };
 
         lang1 {
             bindings = <&kp LANG1>;
             key-positions = <17 18>; /* K + L */
-            layers = <2>;
+            layers = <0>;
         };
 
         lang2 {
             bindings = <&kp LANG2>;
             key-positions = <11 12>; /* S + D */
-            layers = <2>;
+            layers = <0>;
         };
 
         CTL_Z {
             bindings = <&kp LC(Z)>;
             key-positions = <21 22>; /* X + C */
-            layers = <2>;
+            layers = <0>;
         };
     };
 
@@ -139,10 +139,10 @@
         win_default_layer {
             display-name = "BASE";
             bindings = <
-                &kp Q        &kp W       &kp E        &kp R        &kp T                                 &kp Y        &kp U       &kp I       &kp O  &kp P
-                &mt LSHIFT A &kp S       &kp D        &kp F        &kp G                                 &kp H        &kp J       &kp K       &kp L  &kp MINUS
-                &kp Z        &kp X       &kp C        &kp V        &kp B        &mkp MB1     &mkp MB2    &kp N        &kp M       &kp COMMA   &kp DOT  &lt 4 SLASH
-                                    &kp LWIN  &mt LCTRL TAB  &mt LSHIFT SPACE  &lt 1 SPACE  &lt 2 ENTER  &lt 2 BSPC  &lt 3 DEL  &kp RALT
+                &mt LWIN   Q &kp W       &kp E        &kp R        &kp T                                 &kp Y        &kp U        &kp I       &kp O  &mt LWIN    P
+                &lt 2      A &kp S       &kp D        &mt LSHIFT F &kp G                                 &kp H        &mt RSHIFT J &kp K       &kp L  &lt 2       SEMI
+                &kp Z        &kp X       &kp C        &lt 1      V &kp B       &lt 2 DEL    &kp BSPC     &kp N        &lt 1      M &kp COMMA   &kp DOT  &mt RALT  SLASH
+                                   &kp LWIN  &mt LCTRL TAB  &mt LSHIFT SPACE   &mkp MB1     &mkp  MB2    &mt RSHIFT SPACE  &lt 3 ESC  &kp RALT
             >;
             sensor-bindings =
                 <&enc_kp C_VOL_DN C_VOL_UP>,
