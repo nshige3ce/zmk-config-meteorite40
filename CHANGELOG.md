@@ -1,5 +1,40 @@
 # Changelog
 
+## [4.9.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.8.0...v4.9.0) (2026-09-25)
+
+
+### Features
+
+* **firmware:** enable fast Bluetooth keymap loading ([f8bd58d](https://github.com/iwk7273/zmk-config-meteorite40/commit/f8bd58d10dcc530a50a901fdaae9a57fa2e6c343))
+
+## [4.8.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.7.0...v4.8.0) (2026-09-24)
+
+
+### 新機能
+
+* Meteorite Studio の Connections から Bluetooth の接続先を確認し、使用する接続先の切替、ペアリング解除、USB／Bluetooth の出力優先を変更できるようになりました。
+* 接続先ごとに Studio 内で識別するための「ホスト名」を付けられるようになりました。Bluetooth のペアリング画面に表示されるキーボード名も接続先ごとに変更でき、再起動後も保持されます。
+* 接続が切れる可能性のある操作では事前に確認し、再接続後に変更結果を確認できるようになりました。
+
+### 利用上の注意
+
+* キーボード名は UTF-8 で 16 バイトまでです。ペアリング済みの端末では、OS が以前の名前を表示し続ける場合があります。
+* Connections の新しい設定には v4.8.0 以降の firmware と対応する Meteorite Studio が必要です。以前の firmware では表示しません。
+
+## [4.7.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.6.0...v4.7.0) (2026-09-23)
+
+
+### 新機能
+
+* Meteorite Studioから最大16件のマクロを作成し、キー入力、押す／離す、待機、文字列を組み合わせてキーボード本体へ保存できるようになりました。
+* 1つのキーにWindows用とMac用のマクロを割り当て、現在のOS設定に応じて実行するマクロを切り替えられる「Macro Pair」を追加しました。
+* 登録できるコンボ数を16件から24件へ増やしました。
+* マクロ画面では、名前変更、プレビュー、ステップの並べ替え、削除をまとめて操作できます。使用容量とTap時間は詳細設定内にまとめ、意味を確認できる説明を追加しました。
+
+### 利用条件
+
+* マクロ編集とMacro Pairにはv4.7.0以降のfirmwareが必要です。以前のfirmwareへ接続した場合、対応していない機能は表示しません。
+
 ## [4.6.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.5.0...v4.6.0) (2026-08-25)
 
 
